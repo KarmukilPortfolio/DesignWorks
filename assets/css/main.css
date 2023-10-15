@@ -2051,6 +2051,11 @@ input, select, textarea {
 	opacity: 0; /* Initially, the text is invisible */
 	
   }
+
+
+
+
+
   .image2-container:hover .read-more-text {
 	opacity: 1; /* Make the text visible on hover */
   }
@@ -2058,6 +2063,7 @@ input, select, textarea {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
+	width: 100%;
 	border-radius: 0.35em;
 	border: 0;
   }
@@ -2067,6 +2073,8 @@ input, select, textarea {
 	height: auto;
 	transition: filter 0.3s, opacity 0.3s;
   }
+
+  
   
   .image2-container:hover .hover-image2 {
 	content: 'View';
@@ -2096,8 +2104,8 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
-
+		} 
+		
 		.image.thumb {
 			text-align: center;
 		}
@@ -3256,6 +3264,151 @@ input, select, textarea {
 }
 
 
+
+.expand-menu-open {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    z-index: 3;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.expand-menu-open span {
+    background: #000000 none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.expand-menu-open span:first-child {
+    width: 30px;
+}
+
+.expand-menu-open span:nth-child(2) {
+    float: right;
+    margin-top: 2px;
+    width: 26px;
+}
+
+.expand-menu-open span:nth-child(3) {
+    margin-top: 6px;
+    width: 30px;
+}
+
+.expand-menu-open span:last-child {
+    margin-top: 2px;
+    width: 22px;
+    float: right;
+}
+
+.expand-menu-open:hover span {
+    background: #49bf9d none repeat scroll 0 0;
+}
+.mainmenu-expand {
+    background-color: #fff;
+    height: 100%;
+    padding: 30px 0;
+    position: fixed;
+    right: -100%;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 300px;
+    z-index: 99;
+}
+
+.mainmenu-expand.slide_right {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    right: 0;
+}
+
+.close-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.close-menu i {
+    border: 1px solid #aaaaaa;
+    border-radius: 50%;
+    color: #aaaaaa;
+    display: block;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.close-menu i:hover,
+.close-menu i:focus {
+    color: #000000;
+    border-color: #000000;
+}
+
+.nav.navbar-nav {
+    float: none;
+}
+
+#slide-nav li {
+    float: none;
+    text-align: center;
+}
+
+#slide-nav li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: 1px solid #dddddd;
+    color: #aaaaaa;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 13px 0;
+    text-transform: uppercase;
+}
+
+#slide-nav li a:hover,
+#slide-nav li a:active {
+    color: #000000;
+    background: none;
+}
+
+#slide-nav li a:focus {
+    color: #000000;
+}
+
+.menu-logo {
+    padding: 30px 0;
+}
+
+.mainmenu-box li a {
+    color: #aaaaaa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 13px 0;
+}
+
+.expand-social {
+    margin: 20px 0 15px;
+}
+
+.sidebar-bookmark-area > p {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.sidebar-bookmark-area {
+    margin-top: 70px;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
@@ -3381,3 +3534,5 @@ input, select, textarea {
 			}
 
 	}
+
+
