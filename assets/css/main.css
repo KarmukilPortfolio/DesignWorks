@@ -291,7 +291,10 @@ input, select, textarea {
 		}
 
 /* Row */
-
+ .buttonss:hover {
+    border-color: #49bf9d;
+    color: #49bf9d !important;
+}
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -2520,6 +2523,11 @@ input, select, textarea {
 		.button:hover {
 			border-color: #49bf9d;
 			color: #49bf9d !important;
+		}
+
+		.buttona:hover {
+			border-color: #0064df73;
+			color: #0064df73 !important;
 		}
 
 		input[type="submit"]:active,
